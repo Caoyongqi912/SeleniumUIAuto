@@ -1,0 +1,66 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="AlphaUnsortedPropertiesFile" enabled="false" level="WARNING" enabled_by_default="false" />
+    <inspection_tool class="DuplicatedCode" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <Languages>
+        <language minSize="140" name="Python" />
+      </Languages>
+    </inspection_tool>
+    <inspection_tool class="PyCompatibilityInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ourVersions">
+        <value>
+          <list size="2">
+            <item index="0" class="java.lang.String" itemvalue="3.9" />
+            <item index="1" class="java.lang.String" itemvalue="3.10" />
+          </list>
+        </value>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="E303" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyPep8NamingInspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
+      <option name="ignoredErrors">
+        <list>
+          <option value="N803" />
+          <option value="N806" />
+          <option value="N802" />
+          <option value="N814" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="PyUnresolvedReferencesInspection" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="ignoredIdentifiers">
+        <list>
+          <option value="Model.models.Base.query" />
+          <option value="Model.models.User.query" />
+          <option value="object.name" />
+          <option value="Models.models.User.query" />
+          <option value="object.Delete" />
+          <option value="Models.BaseModel.Base.query" />
+          <option value="object.groupInfo" />
+          <option value="object.save" />
+          <option value="object.productInfo" />
+          <option value="object.projectInfo" />
+          <option value="object.getInfo" />
+          <option value="object.update" />
+          <option value="object.domain" />
+          <option value="object.acquireApi" />
+          <option value="object.id" />
+          <option value="object.appId" />
+          <option value="object.storage" />
+          <option value="object.startApi" />
+          <option value="object.queryApi" />
+          <option value="object.updateLayoutApi" />
+          <option value="object.stopApi" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="WrongPropertyKeyValueDelimiter" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>
