@@ -2,6 +2,42 @@
 
 使用Selenium + Allure + Pytest + Docker + Redis + Jenkins 做web UI自动化
 
+### **使用**
+
+- 拉取项目
+```shell
+  git clone https://github.com/Caoyongqi912/SeleniumUIAuto.git
+```
+
+- 安装依赖
+```shell
+  pip install -r requirements.txt
+```
+
+- 目录结构
+  - config
+    - config.ini   修改目标路由与相关配置
+  - elements
+    - 抽象页面空间元素
+  - method
+    - 抽象页面方法
+  - TestCase
+    - 测试用例
+  - utils
+    - Assert 自定义断言
+    - chromedriver 浏览器驱动 需匹配版本 非linux 环境无视
+    - Driver 初始化driver
+    - graphical 图片相对定位
+    - log 日志
+    - seleniumBase api封装
+    - seleniumOpt  opt定义
+
+
+    
+
+
+
+
 
 ### **pytest**
 

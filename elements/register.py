@@ -40,28 +40,3 @@ class RegisterLogin(Register):
     # 验证码错误文本
     INVALID_COD_MSG = ("xpath", "//div[contains(@class,'error_con')]/p")
 
-
-class RegisterCreateTeam(Register):
-    # ================== 完善个人信息界面 ================
-    INPUT_TYPE = ("xpath", '//input[@placeholder="请选择行业类型"]')
-    INPUT_SIZE = ("xpath", '//input[@placeholder="请选择团队规模"]')
-    INPUT_CITY = ("xpath", '//input[@placeholder="请选择所在城市"]')
-
-    SELECT_TYPE = ("xpath", "//p[text()='教育']")  # 行业类型选择教育
-    SELECT_SIZE = ("xpath", "//p[text()='10人以内']")  # 行业规模选择十人以内
-    # 城市选择 北京/直辖市/东城区
-    SELECT_CITY = ("xpath", "//span[text()='北京市']")
-    SELECT_MUNICIPALITY = ("xpath", "//span[text()='直辖市']")
-    SELECT_REGION = ("xpath", "//span[text()='东城区']")
-
-    # ================== 礼包界面 ================
-    GET_GIFT_INFO = ("xpath", "//p[@class='get-gift-info-title']")
-
-
-class RegisterJoinTeam(Register):
-    # ================== 加入已有团队 ================
-    INPUT_TEAM_CODE = ("xpath", "//input")  # 输入团队吗
-    GET_INPUT_ERROR_INFO = ("class", 'default-input-error')  # 获取input 错误信息
-
-    # 已加入
-    JOIN_ERROR_INFO = ("xpath", '//p[@class="register-error-modal-info"]')

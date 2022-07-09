@@ -44,10 +44,6 @@ class TestRegister:
         """
         pics = []
         self.driver.register(self.mobile)
-        self.driver.input_code()
-        self.driver.click_create_team_button()
-        self.driver.create_team_input_userName("1否2")
-        pics.append(self.driver.get_png())
         exp = "true"
         res = self.driver.check_button_disabled()
         self.driver.allure_report(self.test_create_team_username, pics, exp, res)

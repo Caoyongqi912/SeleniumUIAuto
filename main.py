@@ -6,11 +6,12 @@ from config.Config import Config
 from feishu import fs
 from utils.Log import get_log
 from config.redisConfig import Redis
+
 log = get_log()
 
 if __name__ == '__main__':
-    # 初始化白名单手机号
-    Redis().initMobiles()
+    # # 初始化白名单手机号
+    # Redis().initMobiles()
     conf = Config()
     case_path = 'TestCase'
 
@@ -29,7 +30,9 @@ if __name__ == '__main__':
 
     pytest.main(args=args)
     time.sleep(120)
-    fs()
+
+    # 飞书
+    # fs()
 
     # -n 20 20个进程  -v 详细打印 -case_path 测试地址 -s 关闭捕捉， 输出打印信息 q’:减少测试的运行冗长。
     # -x’:出现一条测试用例失败就退出测试。在调试阶段非常有用，当测试用例失败时，应该先调试通过，而不是继续执行测试用例。
